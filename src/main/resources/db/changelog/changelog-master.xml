@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <include file="classpath:/db/changelog/changelog-1.0.xml"/>
+
+    <changeSet id="create_tables" author="IK">
+        <sqlFile path="classpath:/script.sql"/>
+    </changeSet>
+
+</databaseChangeLog>
